@@ -36,7 +36,7 @@ import (
 )
 
 const (
-	dockerStopTimeoutSeconds = 30
+	dockerStopTimeoutSeconds = 4 * 60 * 60
 	dockerDefaultTag         = "latest"
 )
 
@@ -45,7 +45,7 @@ const (
 	pullImageTimeout        = 2 * time.Hour
 	createContainerTimeout  = 1 * time.Minute
 	startContainerTimeout   = 1 * time.Minute
-	stopContainerTimeout    = 1 * time.Minute
+	stopContainerTimeout    = 4 * time.Hour
 	removeContainerTimeout  = 5 * time.Minute
 	inspectContainerTimeout = 10 * time.Second
 	listContainersTimeout   = 10 * time.Minute
